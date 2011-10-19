@@ -1,0 +1,10 @@
+= twtir
+
+Twtir currently does not really need a README.
+
+
+
+
+Copyright (c) 2011 cookiebatch. See LICENSE.txt for
+further details.
+
