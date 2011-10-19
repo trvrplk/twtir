@@ -10,15 +10,14 @@ puts "Welcome! Twtir posts to Twitter from the command line!"
 
 puts "your token, please:"
 
-please = '50762426-d4tPUzZzGy0RnzGt5zmMnkl59JETM7BWl6Cf8mVdV'
+please = gets.chomp
 
 
 
 
 puts "...aaand your secret_token:"
 
-secret_token = 'j3aumUEub9EbKkjoK6QTSuqnAbp21g69Trm1xAgflVQ'
-
+secret_token = gets.chomp
 puts "You're Done!"
 
 
