@@ -18,6 +18,8 @@ please = gets.chomp
 puts "...aaand your secret_token:"
 
 secret_token = gets.chomp
+
+
 puts "You're Done!"
 
 
@@ -34,18 +36,35 @@ client = Twitter::Client.new
 
 
 
+puts 'What would you like to do?'
 
-puts "Now,  post an update:"
-
-update = gets.chomp
-
-client.update(update)
+@do = gets.chomp
 
 
-puts "Now, post an update:"
 
-update = gets.chomp
+if @do = update [then]  
 
-client.update(update)
+	puts "Now,  post an update:"
+
+	update = gets.chomp
+
+	client.update(update)
 
 
+	puts "Now, post an update:"
+
+	update = gets.chomp
+
+	client.update(update)
+
+
+
+elsif @do = search [then]
+
+	@@search = Twitter::Search.new
+
+	puts 'What hashtag?'
+
+@hashtag = gets.chomp 
+
+puts @@search.hahshtag(@hashtag ).language("en").no_retwets.per_page(1).fetch.first.text
