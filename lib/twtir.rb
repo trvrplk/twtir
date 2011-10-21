@@ -1,6 +1,5 @@
 #!/usr/bin/ruby
 
-require "rubygems"
 require "twitter"
 
 
@@ -36,14 +35,6 @@ client = Twitter::Client.new
 
 
 
-puts 'What would you like to do?'
-
-@do = gets.chomp
-
-
-
-if @do = update [then]  
-
 	puts "Now,  post an update:"
 
 	update = gets.chomp
@@ -58,13 +49,4 @@ if @do = update [then]
 	client.update(update)
 
 
-
-elsif @do = search [then]
-
-	@@search = Twitter::Search.new
-
-	puts 'What hashtag?'
-
-@hashtag = gets.chomp 
-
-puts @@search.hahshtag(@hashtag ).language("en").no_retwets.per_page(1).fetch.first.text
+end
